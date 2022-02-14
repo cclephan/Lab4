@@ -1,13 +1,11 @@
 """!
 @file user_interface.py
 This file contains the user interface which will run on the PC and send serial
-input to the Nucleo and read back serial output. The user inputs a Kp value,
-the motor will spin for 1 revolution, after 2 seconds, the user will be 
-prompted again for another step response. This can be repeated unitil the user
-presses control+c to stop the code.
+input to the Nucleo and read back serial output. Plots RC circuit step response
+of ADC output created from main.py.
 @author Christian Clephan
 @author Kyle McGrath
-@date   02-Jan-2022
+@date   10-Jan-2022
 @copyright (c) 2022 released under CalPoly
 """
 
@@ -42,6 +40,3 @@ with serial.Serial ('COM4', 115200) as s_port:
     pyplot.title('RC Circuit Step Response')
     pyplot.grid(True)
     pyplot.show()
-    time = []
-    position = []
-    
