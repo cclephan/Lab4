@@ -1,6 +1,3 @@
-import pyb
-import utime
-import task_share
 '''!
 @file main.py
 Main file contains interrupt callback function at frequency specified by timer
@@ -9,14 +6,16 @@ ADC readings everytime the interrupt callback function is called. Once the queue
 is full the timer is deinitialized and the entire queue is printed.
 @author Christian Clephan
 @author Kyle McGrath
-@date   10-Jan-2022
+@date   14-Jan-2022
 @copyright (c) 2022 released under CalPoly
 '''
 
+import pyb
+import task_share
+
 def toggler(timerobj):
     '''!
-    @brief
-    @details
+    @brief Interrupt callback function which is run based on timerobj frequency and puts read ADC value into a queue.
     @param  timerobj is the timer used with a frequency to call function
     '''
     q0.put(myADC.read())
