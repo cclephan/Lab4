@@ -5,7 +5,7 @@ input to the Nucleo and read back serial output. Plots RC circuit step response
 of ADC output created from main.py.
 @author Christian Clephan
 @author Kyle McGrath
-@date   14-Jan-2022
+@date   16-Feb-2022
 @copyright (c) 2022 released under CalPoly
 """
 
