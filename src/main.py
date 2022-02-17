@@ -6,7 +6,7 @@ ADC readings everytime the interrupt callback function is called. Once the queue
 is full the timer is deinitialized and the entire queue is printed.
 @author Christian Clephan
 @author Kyle McGrath
-@date   14-Jan-2022
+@date   16-Feb-2022
 @copyright (c) 2022 released under CalPoly
 '''
 
