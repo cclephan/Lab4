@@ -17,5 +17,5 @@ By doing this we found the time constant to be 304ms, Figure 2 shows our annotat
 Figure 2: Annotated RC Step Response
 
 Our experimental time constant of 304ms was extremely close to the measured resistor and capacitor used in our circuit. Our resistor and capacitor were found to be
-103 kΩ and 3.35 μF, which comes to a time constant of 345ms. This makes the percent error = 13.5%. This fits within the tolerances of our capacitor and resistor, which
+103 kΩ and 3.3 μF, which comes to a time constant of 340ms. This makes the percent error = 11.8%. This fits within the tolerances of our capacitor and resistor, which
 can be between 5% to 25%.
